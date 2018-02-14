@@ -4,7 +4,7 @@ require 'scraperwiki.php';
 
     /*
     URL per dettaglio scuola:
-    http://cercalatuascuola.istruzione.it/scuolaInChiaro/home/start.do?p1=CHAA01801V&p2=201112
+    http://cercalatuascuola.istruzione.it/scuolaInChiaro/home/start.do?p1=CHAA01801V&p2=201718
     */
 
     $regioni = array() ;

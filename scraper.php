@@ -11,12 +11,14 @@ require 'scraperwiki.php';
     $province = array() ;
     $comuni = array() ;
     $scuole = array() ;
+    $Codice = array() ;
+
 
     require 'scraperwiki/simple_html_dom.php';
     
     function getRegioni()
     {
-        $html = scraperWiki::scrape("http://cercalatuascuola.istruzione.it/cercalatuascuola/ricercaAvanzata/start.do");
+        $html = scraperWiki::scrape("http://cercalatuascuola.istruzione.it/cercalatuascuola/ricerca/risultati?codiceRegione=AB_ABRUZZO&codiceOrdine=&checkStatale=S&checkNonStatale=S&radioBiennioTriennio=Biennio&denominazione=&codMecc=&tipoRicerca=AVANZATA&gidf=1");
         $dom = new simple_html_dom();
         $dom->load($html);
     
@@ -79,6 +81,7 @@ require 'scraperwiki.php';
                 'id' => $id,
                 'provincia' => $p_provinciaID,
                 'regione' => $p_regioneID
+                'Codice' => $p_codiceID
                 );
 
                 // scraperwiki::save(array('id'), $comuni);

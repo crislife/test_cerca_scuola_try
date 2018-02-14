@@ -1,4 +1,5 @@
 <?php
+require 'scraperwiki.php';
     // TEST PER SCUOLE ITALIANE
 
     /*

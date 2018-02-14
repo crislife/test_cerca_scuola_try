@@ -81,7 +81,7 @@ require 'scraperwiki.php';
                 'id' => $id,
                 'provincia' => $p_provinciaID,
                 'regione' => $p_regioneID
-                'Codice' => $p_codiceID
+                'Codice' => $data->plaintext
                 );
 
                 // scraperwiki::save(array('id'), $comuni);
